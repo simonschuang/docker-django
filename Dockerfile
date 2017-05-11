@@ -6,7 +6,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
 
 ADD get-pip.py /get-pip.py
 RUN python /get-pip.py
-RUN pip install Django djangorestframework django-rest-swagger django-filter
+RUN pip install Django djangorestframework django-rest-swagger django-filter pygments httpie
 
 ADD portal /portal
 
