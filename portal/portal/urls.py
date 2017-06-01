@@ -10,7 +10,7 @@ urlpatterns = [
     url(r'^docs/', include('rest_framework_docs.urls')),
 
     # API
-    url(r'^instances/', view=include('instances.urls')),
+    url(r'^devices/', view=include('devices.urls')),
 ]
 
 # urlpatterns = format_suffix_patterns(urlpatterns)
